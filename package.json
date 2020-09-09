@@ -13,7 +13,17 @@
   "keywords": [
     "RateLimiting",
     "Redis",
-    "appId"
+    "appId",
+    "rate",
+    "rate-limit",
+    "middleware",
+    "ip",
+    "auth",
+    "authorization",
+    "security",
+    "brute",
+    "brute-force",
+    "attack"
   ],
   "author": "Kartik Rawat",
   "license": "MIT",
