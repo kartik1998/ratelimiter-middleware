@@ -21,6 +21,7 @@ const rateLimiter = require('ratelimiter-middleware');
 const maxRequests = 100;
 const timeLimit = 60; // seconds
 const appId = 'appId'; // The request header that you specify
+
 app.use(rateLimiter(maxRequests,timeLimit, appId));
 
 // The appId parameter can be left empty if you want to rateLimit based
