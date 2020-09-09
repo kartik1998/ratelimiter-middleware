@@ -7,7 +7,7 @@ Basic rate-limiting middleware for Express. Used to limit repeated requests to p
 
 **Ensure that your redis server is running before using**
 
-##Installation
+## Installation
 
 `npm i --save ratelimiter-middleware`
 
