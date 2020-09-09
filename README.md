@@ -7,7 +7,7 @@ Basic rate-limiting middleware for Express. Used to limit repeated requests to p
 
 **Ensure that your redis server is running before using**
 
-##Installation 
+##Installation
 
 `npm i --save ratelimiter-middleware`
 
@@ -22,6 +22,10 @@ const maxRequests = 100;
 const timeLimit = 60; // seconds
 const appId = 'appId'; // The request header that you specify
 app.use(rateLimiter(maxRequests,timeLimit, appId));
+
+// The appId parameter can be left empty if you want to rateLimit based
+// on IP address
+// eg. app.use(rateLimiter(maxRequests,timeLimit));
 
 app.get('/', (req, res) => {
   res.json({ msg: 'AoK' });
