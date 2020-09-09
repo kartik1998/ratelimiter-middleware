@@ -1,3 +1,9 @@
+const redis = require('redis');
+
+const client = redis.createClient();
+
+client.on('error', (err) => console.log(`Error ${err}`));
+
 const rateLimiter = (maxReqCount, timeLimit, appId) => (req, res, next) => {
   let token = null;
   if (!appId) {
@@ -24,4 +30,4 @@ const rateLimiter = (maxReqCount, timeLimit, appId) => (req, res, next) => {
     });
 };
 
-module.exports = { rateLimiter };
+module.exports = rateLimiter;
