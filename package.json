@@ -20,5 +20,6 @@
   "bugs": {
     "url": "https://github.com/kartik1998/ratelimiter-middleware/issues"
   },
-  "homepage": "https://github.com/kartik1998/ratelimiter-middleware#readme"
+  "homepage": "https://github.com/kartik1998/ratelimiter-middleware#readme",
+  "dependencies": {}
 }
